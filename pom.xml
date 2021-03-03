@@ -13,6 +13,7 @@
         <module>hbase-demo</module>
         <module>xxl-job-demo</module>
         <module>zookeeper-demo</module>
+        <module>rocketmq-demo</module>
     </modules>
 
     <properties>
