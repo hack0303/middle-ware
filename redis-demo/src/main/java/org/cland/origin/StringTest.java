@@ -11,8 +11,6 @@ public class StringTest extends BaseSupport {
 	     jd.append("stringKey", "part1");
 	     jd.append("stringKey", "part2");
 	     jd.append("stringKey", "part3");
-	     //jd.set("expire5s","");
-	     log.info("{}","hello");
 
 	}
 
