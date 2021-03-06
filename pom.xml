@@ -9,11 +9,9 @@
 
     <modules>
         <module>hazelcast-demo</module>
-        <module>redis-demo</module>
         <module>hbase-demo</module>
         <module>xxl-job-demo</module>
         <module>zookeeper-demo</module>
-        <module>rocketmq-demo</module>
         <module>hive-demo</module>
         <module>mongodb-demo</module>
         <module>es-demo</module>
@@ -24,6 +22,7 @@
         <module>rdb-demos</module>
         <module>nosql-demos</module>
         <module>cache-demos</module>
+        <module>mq-demos</module>
     </modules>
 
     <developers>

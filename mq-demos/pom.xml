@@ -9,13 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>rocketmq-demo</artifactId>
+    <artifactId>mq-demos</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>kafka-demo</module>
+        <module>rocketmq-demo</module>
+    </modules>
 
-    <dependencies>
-    <dependency>
-        <groupId>org.apache.rocketmq</groupId>
-        <artifactId>rocketmq-client</artifactId>
-        <version>4.8.0</version>
-    </dependency>
-    </dependencies>
+
 </project>
