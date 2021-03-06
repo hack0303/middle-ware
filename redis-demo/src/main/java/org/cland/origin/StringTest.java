@@ -1,4 +1,4 @@
-package org.clang.origin;
+package org.cland.origin;
 
 public class StringTest extends BaseSupport {
 
