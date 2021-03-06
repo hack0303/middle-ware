@@ -1,6 +1,6 @@
 package org.cland.origin;
 
-public class Lister extends BaseSupport {
+public class ListTest extends BaseSupport {
 
 	public static void main(String[] args) {
 	 jd.select(2);
