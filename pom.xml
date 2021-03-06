@@ -23,6 +23,7 @@
         <module>domain-common</module>
         <module>rdb-demos</module>
         <module>nosql-demos</module>
+        <module>cache-demos</module>
     </modules>
 
     <developers>
