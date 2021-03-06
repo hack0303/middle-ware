@@ -1,4 +1,4 @@
-package org.clang.simple.template0sync;
+package org.cland.simple.template0sync;
 
 import org.apache.rocketmq.client.exception.MQBrokerException;
 import org.apache.rocketmq.client.exception.MQClientException;
