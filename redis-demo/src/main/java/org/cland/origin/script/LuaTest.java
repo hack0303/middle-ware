@@ -1,6 +1,7 @@
-package org.cland.origin;
+package org.cland.origin.script;
 
 import lombok.extern.slf4j.Slf4j;
+import org.cland.origin.BaseSupport;
 
 @Slf4j
 public class LuaTest extends BaseSupport {

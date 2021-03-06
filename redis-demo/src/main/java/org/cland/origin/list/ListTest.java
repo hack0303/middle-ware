@@ -1,4 +1,6 @@
-package org.cland.origin;
+package org.cland.origin.list;
+
+import org.cland.origin.BaseSupport;
 
 public class ListTest extends BaseSupport {
 
