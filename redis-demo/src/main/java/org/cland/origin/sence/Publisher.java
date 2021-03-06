@@ -1,6 +1,7 @@
-package org.cland.origin;
+package org.cland.origin.sence;
 
 import lombok.extern.log4j.Log4j2;
+import org.cland.origin.BaseSupport;
 
 import java.util.concurrent.TimeUnit;
 
