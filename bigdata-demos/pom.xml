@@ -11,5 +11,9 @@
 
     <artifactId>bigdata-demos</artifactId>
     <packaging>pom</packaging>
-
+     <modules>
+         <module>hbase-demo</module>
+         <module>hive-demo</module>
+         <module>spark-demo</module>
+     </modules>
 </project>
