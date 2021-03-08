@@ -9,13 +9,10 @@
 
     <modules>
         <module>hazelcast-demo</module>
-        <module>hbase-demo</module>
         <module>xxl-job-demo</module>
         <module>zookeeper-demo</module>
-        <module>hive-demo</module>
         <module>mongodb-demo</module>
         <module>es-demo</module>
-        <module>spark-demo</module>
         <module>flink-demo</module>
         <module>cassandra-demo</module>
         <module>domain-common</module>
@@ -23,6 +20,7 @@
         <module>nosql-demos</module>
         <module>cache-demos</module>
         <module>mq-demos</module>
+        <module>bigdata-demos</module>
     </modules>
 
     <developers>
