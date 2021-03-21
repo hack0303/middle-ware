@@ -9,7 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>hive-demo</artifactId>
-
-
+    <artifactId>bigdata-demos</artifactId>
+    <packaging>pom</packaging>
+     <modules>
+         <module>hbase-demo</module>
+         <module>hive-demo</module>
+         <module>spark-demo</module>
+     </modules>
 </project>

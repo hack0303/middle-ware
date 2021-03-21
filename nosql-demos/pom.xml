@@ -11,5 +11,9 @@
 
     <artifactId>nosql-demos</artifactId>
     <packaging>pom</packaging>
+    <modules>
+        <module>ssdb-demo</module>
+        <module>leveldb-demo</module>
+    </modules>
 
 </project>
