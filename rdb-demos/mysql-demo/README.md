@@ -15,6 +15,11 @@ docker images
 
 4.运行容器
 docker run -itd --name mysql-test -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 mysql
+或 挂载
+docker run -itd --name mysql-test -v /home/mysql:/var/lib/mysql  -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 mysql
+
+start with docker start
+docker update rabbitmq --restart=always
 
 5.安装成功
 docker ps 命令查看是否安装成功
