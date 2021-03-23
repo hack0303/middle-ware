@@ -2,6 +2,28 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/hazelcast-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigdata-demos" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigdata-demos/es-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigdata-demos/hbase-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigdata-demos/hive-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bigdata-demos/spark-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache-demos" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache-demos/hazelcast-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache-demos/redis-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cassandra-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/domain-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flink-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mongodb-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mq-demos" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mq-demos/kafka-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mq-demos/rabbit-mq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mq-demos/rocketmq-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nosql-demos" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nosql-demos/leveldb-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nosql-demos/ssdb-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rdb-demos" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rdb-demos/mysql-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xxl-job-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zookeeper-demo" charset="UTF-8" />
   </component>
 </project>
