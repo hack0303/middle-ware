@@ -8,11 +8,9 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>hazelcast-demo</module>
         <module>xxl-job-demo</module>
         <module>zookeeper-demo</module>
         <module>mongodb-demo</module>
-        <module>es-demo</module>
         <module>flink-demo</module>
         <module>cassandra-demo</module>
         <module>domain-common</module>
@@ -39,6 +37,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>2.4.0</spring-boot.version>
+        <hazelcast.version>4.1.2</hazelcast.version>
     </properties>
 
     <parent>
@@ -55,6 +54,12 @@
                 <version>${spring-boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.hazelcast/hazelcast -->
+            <dependency>
+                <groupId>com.hazelcast</groupId>
+                <artifactId>hazelcast</artifactId>
+                <version>${hazelcast.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
