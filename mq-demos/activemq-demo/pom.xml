@@ -3,20 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>middle-ware</artifactId>
+        <artifactId>mq-demos</artifactId>
         <groupId>org.cland</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>mq-demos</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>kafka-demo</module>
-        <module>rocketmq-demo</module>
-        <module>rabbit-mq</module>
-        <module>activemq-demo</module>
-    </modules>
+    <artifactId>activemq-demo</artifactId>
 
 
 </project>
