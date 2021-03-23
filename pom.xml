@@ -10,7 +10,6 @@
     <modules>
         <module>xxl-job-demo</module>
         <module>zookeeper-demo</module>
-        <module>mongodb-demo</module>
         <module>flink-demo</module>
         <module>cassandra-demo</module>
         <module>domain-common</module>
