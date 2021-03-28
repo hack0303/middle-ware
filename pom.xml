@@ -18,6 +18,8 @@
         <module>cache-demos</module>
         <module>mq-demos</module>
         <module>bigdata-demos</module>
+        <module>basic-demos</module>
+        <module>level0-demo</module>
     </modules>
 
     <developers>
