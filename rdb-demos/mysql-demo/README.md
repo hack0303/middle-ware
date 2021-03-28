@@ -26,4 +26,10 @@ docker ps 命令查看是否安装成功
 
 
 ```
-
+# command
+```
+新建用户并授权
+CREATE USER 'username'@'host' IDENTIFIED BY 'password';
+GRANT ALL ON *.* TO 'username'@'%';
+```
+[参考](https://www.jianshu.com/p/d7b9c468f20d)
