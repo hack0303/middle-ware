@@ -10,11 +10,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class SayHelloController {
 
-    @Value("${key.k1}")
+    @Value("${k1.v1}")
     String v1;
+
+    @Value("${name}")
+    String name;
     @GetMapping("{key}")
     public String k1Value(@PathVariable("key") String key){
-        return key+" is "+v1;
+        return key+" is "+v1 +" "+name;
     }
 
 }
