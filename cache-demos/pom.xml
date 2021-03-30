@@ -11,6 +11,9 @@
 
     <artifactId>cache-demos</artifactId>
     <packaging>pom</packaging>
+    <modules>
+        <module>hazelcast-demo</module>
+    </modules>
 
 
 </project>

@@ -8,11 +8,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>hazelcast-demo</module>
         <module>xxl-job-demo</module>
         <module>zookeeper-demo</module>
-        <module>mongodb-demo</module>
-        <module>es-demo</module>
         <module>flink-demo</module>
         <module>cassandra-demo</module>
         <module>domain-common</module>
@@ -21,6 +18,8 @@
         <module>cache-demos</module>
         <module>mq-demos</module>
         <module>bigdata-demos</module>
+        <module>basic-demos</module>
+        <module>level0-demo</module>
     </modules>
 
     <developers>
@@ -38,13 +37,15 @@
         <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <spring-boot.version>2.4.0</spring-boot.version>
+        <spring-boot.version>2.1.11.RELEASE</spring-boot.version>
+        <spring-cloud.version>Greenwich.SR4</spring-cloud.version>
+        <hazelcast.version>4.1.2</hazelcast.version>
     </properties>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.4.0</version>
+        <version>2.0.4.RELEASE</version>
     </parent>
 
     <dependencyManagement>
@@ -55,6 +56,26 @@
                 <version>${spring-boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>2.1.0.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.hazelcast/hazelcast -->
+            <dependency>
+                <groupId>com.hazelcast</groupId>
+                <artifactId>hazelcast</artifactId>
+                <version>${hazelcast.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

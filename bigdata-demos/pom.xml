@@ -15,5 +15,6 @@
          <module>hbase-demo</module>
          <module>hive-demo</module>
          <module>spark-demo</module>
+         <module>es-demo</module>
      </modules>
 </project>

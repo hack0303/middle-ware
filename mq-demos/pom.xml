@@ -15,6 +15,8 @@
         <module>kafka-demo</module>
         <module>rocketmq-demo</module>
         <module>rabbit-mq</module>
+        <module>activemq-demo</module>
+        <module>zeromq-demo</module>
     </modules>
 
 
