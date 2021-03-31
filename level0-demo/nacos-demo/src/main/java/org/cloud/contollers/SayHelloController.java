@@ -13,11 +13,19 @@ public class SayHelloController {
     @Value("${k1.v1}")
     String v1;
 
+    @Value("#{num}")
+    Long num;
+
     @Value("${name:adsa}")
     String name;
     @GetMapping("{key}")
     public String k1Value(@PathVariable("key") String key){
         return key+" is "+v1 +" "+name;
+    }
+
+    @GetMapping("num")
+    public Long num(){
+        return num;
     }
 
 

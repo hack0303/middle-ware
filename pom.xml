@@ -20,6 +20,7 @@
         <module>bigdata-demos</module>
         <module>basic-demos</module>
         <module>level0-demo</module>
+        <module>graph-db-demos</module>
     </modules>
 
     <developers>
