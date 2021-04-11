@@ -9,8 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>basic-demos</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>rpc-demos</artifactId>
 
 
 </project>

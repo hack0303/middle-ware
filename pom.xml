@@ -21,6 +21,7 @@
         <module>basic-demos</module>
         <module>level0-demo</module>
         <module>graph-db-demos</module>
+        <module>rpc-demos</module>
     </modules>
 
     <developers>
