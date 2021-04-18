@@ -9,7 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>zookeeper-demo</artifactId>
+    <artifactId>kv-demos</artifactId>
+    <packaging>pom</packaging>
 
+    <modules>
+        <module>zookeeper-demo</module>
+    </modules>
 
 </project>

@@ -5,3 +5,7 @@
 # 不足
 - 不支持事务
 - 据说topic 在达到50~100时，性能会有下降
+
+# kafka 源码
+主要分包
+clients,connect,core,streams
