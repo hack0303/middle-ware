@@ -6,6 +6,11 @@
 # webUI
 [ref](http://localhost:16010)
 
+# FIREWALLD
+```
+/sbin/iptables -I INPUT -p tcp --dport 16010 -j ACCEPT
+```
+
 # CMD
 ```
 Connect to HBase.
@@ -103,3 +108,16 @@ Exit the HBase Shell.
 
 To exit the HBase Shell and disconnect from your cluster, use the quit command. HBase is still running in the background.
 ```
+# R&Q
+```
+export HBASE_MANAGES_ZK=false
+
+<configuration>
+  <property>
+    <name>hbase.cluster.distributed</name>
+    <value>true</value>
+  </property>
+</configuration>
+
+```
+[linux – 无法在请求的2181端口启动ZK,而导出HBASE_MANAGES_ZK = false](https://www.jb51.cc/linux/400352.html)
