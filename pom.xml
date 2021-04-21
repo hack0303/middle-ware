@@ -22,6 +22,7 @@
         <module>graph-db-demos</module>
         <module>rpc-demos</module>
         <module>kv-demos</module>
+        <module>communication-demo</module>
     </modules>
 
     <developers>
