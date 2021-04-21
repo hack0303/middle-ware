@@ -9,7 +9,6 @@
 
     <modules>
         <module>xxl-job-demo</module>
-        <module>flink-demo</module>
         <module>cassandra-demo</module>
         <module>domain-common</module>
         <module>rdb-demos</module>

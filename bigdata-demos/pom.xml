@@ -17,5 +17,6 @@
          <module>spark-demo</module>
          <module>es-demo</module>
          <module>hadoop-demo</module>
+         <module>flink-demo</module>
      </modules>
 </project>
