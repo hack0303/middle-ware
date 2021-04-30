@@ -9,3 +9,6 @@
 # kafka 源码
 主要分包
 clients,connect,core,streams
+
+# detail
+topic pattern is [a-z0-9A-Z.-_]{1,249}
