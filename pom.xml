@@ -22,6 +22,8 @@
         <module>rpc-demos</module>
         <module>kv-demos</module>
         <module>communication-demo</module>
+        <module>ts-db-demos</module>
+        <module>db-support-demos</module>
     </modules>
 
     <developers>
