@@ -11,5 +11,111 @@
 
     <artifactId>mysql-demo</artifactId>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <!--<version>3.4.3</version>-->
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
+    <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-plugin-plugin</artifactId>
+            <version>3.2</version>
+            <configuration>
+                <goalPrefix>mybatisplus</goalPrefix>
+                <skipErrorNoDescriptorsFound>true</skipErrorNoDescriptorsFound>
+            </configuration>
+            <executions>
+                <execution>
+                    <id>mojo-descriptor</id>
+                    <goals>
+                        <goal>descriptor</goal>
+                    </goals>
+                </execution>
+                <execution>
+                    <id>help-goal</id>
+                    <goals>
+                        <goal>helpmojo</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+
+
+        <plugin>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatisplus-maven-plugin</artifactId>
+            <version>1.0.0</version>
+            <configuration>
+                <!-- 输出目录(默认java.io.tmpdir) -->
+                <outputDir>/Users/cxdev/Documents</outputDir>
+                <!-- 是否覆盖同名文件(默认false) -->
+                <fileOverride>true</fileOverride>
+                <!-- mapper.xml 中添加二级缓存配置(默认true) -->
+                <enableCache>true</enableCache>
+                <!-- 开发者名称 -->
+                <author>hack0303</author>
+                <!-- 数据源配置，(必配) -->
+                <dataSource>
+                    <driverName>com.mysql.jdbc.Driver</driverName>
+                    <url>jdbc:mysql://node01:3306/test?useUnicode=true&amp;useSSL=false</url>
+                    <username>root</username>
+                    <password>123456</password>
+                </dataSource>
+                <strategy>
+                    <!-- 字段生成策略，四种类型，从名称就能看出来含义
+                    nochange(默认),
+                    underline_to_camel,
+                    remove_prefix,
+                    remove_prefix_and_camel -->
+                    <naming>underline_to_camel</naming>
+                    <!-- ID策略 是LONG还是STRING类型(默认stringtype)-->
+                    <serviceIdType>longtype</serviceIdType>
+                    <tablePrefix>t_</tablePrefix>
+                    <!--Entity中的ID生成策略（默认 id_worker）-->
+                    <idGenType>uuid</idGenType>
+                    <!--自定义超类-->
+                    <!--<superServiceClass>net.hyman.base.BaseService</superServiceClass>-->
+                    <!-- 要包含的表 与exclude 二选一配置-->
+                    <include>
+                        <property>sys_users</property>
+                    </include>
+                    <!-- 要排除的表 -->
+                    <!--<exclude>-->
+                    <!--<property>schema_version</property>-->
+                    <!--<property>schema_version</property>-->
+                    <!--</exclude>-->
+                </strategy>
+                <packageInfo>
+                    <!-- 父级包名称，如果不写，下面的service等就需要写全包名(默认com.baomidou) -->
+                    <parent>org.cland.rdb.demo.mysql</parent>
+                    <!--service包名(默认service)-->
+                    <service>service</service>
+                    <!--serviceImpl包名(默认service.impl)-->
+                    <serviceImpl>service.impl</serviceImpl>
+                    <!--entity包名(默认entity)-->
+                    <entity>entity</entity>
+                    <!--mapper包名(默认mapper)-->
+                    <mapper>mapper</mapper>
+                    <!--xml包名(默认mapper.xml)-->
+                    <xml>mapper.xml</xml>
+                </packageInfo>
+            </configuration>
+            <dependencies>
+                <dependency>
+                    <groupId>mysql</groupId>
+                    <artifactId>mysql-connector-java</artifactId>
+                    <version>8.0.23</version>
+                </dependency>
+            </dependencies>
+        </plugin>
+
+    </plugins>
+    </build>
 </project>

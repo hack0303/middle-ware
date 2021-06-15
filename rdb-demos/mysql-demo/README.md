@@ -33,3 +33,4 @@ CREATE USER 'username'@'host' IDENTIFIED BY 'password';
 GRANT ALL ON *.* TO 'username'@'%';
 ```
 [参考](https://www.jianshu.com/p/d7b9c468f20d)
+[generator](https://github.com/hack0303/mybatis-plus-maven-plugin)

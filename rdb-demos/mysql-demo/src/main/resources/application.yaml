@@ -1,0 +1,7 @@
+server:
+  port: 80
+  #servlet:
+   # context-path: /product
+spring:
+  application.name: mysql-test
+  profiles.active: dev
