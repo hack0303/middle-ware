@@ -69,7 +69,18 @@
                 <groupId>org.apache.shardingsphere</groupId>
                 <artifactId>shardingsphere-jdbc-core</artifactId>
             </dependency>
-
+            <!-- import if using XA transaction -->
+            <dependency>
+                <groupId>org.apache.shardingsphere</groupId>
+                <artifactId>shardingsphere-transaction-xa-core</artifactId>
+            </dependency>
+            <!-- import if using BASE transaction -->
+            <!--
+            <dependency>
+                <groupId>org.apache.shardingsphere</groupId>
+                <artifactId>shardingsphere-transaction-base-seata-at</artifactId>
+            </dependency>
+            -->
             <dependency>
                 <groupId>com.zaxxer</groupId>
                 <artifactId>HikariCP</artifactId>
@@ -81,8 +92,27 @@
                 <artifactId>fastjson</artifactId>
                 <version>1.2.76</version>
             </dependency>
-
-
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+            </dependency>
+            <!--
+            <dependency>
+                <groupId>io.seata</groupId>
+                <artifactId>seata-rm-datasource</artifactId>
+                <scope>runtime</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.seata</groupId>
+                <artifactId>seata-tm</artifactId>
+                <scope>runtime</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.seata</groupId>
+                <artifactId>seata-codec-all</artifactId>
+                <scope>runtime</scope>
+            </dependency>
+            -->
         </dependencies>
 
     <build>
