@@ -24,6 +24,7 @@
         <module>communication-demo</module>
         <module>ts-db-demos</module>
         <module>db-support-demos</module>
+        <module>consistent-demo</module>
     </modules>
 
     <developers>
