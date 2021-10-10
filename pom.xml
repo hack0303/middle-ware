@@ -9,7 +9,6 @@
 
     <modules>
         <module>xxl-job-demo</module>
-        <module>cassandra-demo</module>
         <module>domain-common</module>
         <module>rdb-demos</module>
         <module>nosql-demos</module>
@@ -25,7 +24,7 @@
         <module>ts-db-demos</module>
         <module>db-support-demos</module>
         <module>consistent-demo</module>
-        <module>tx-demo</module>
+        <module>tx-demos</module>
     </modules>
 
     <developers>
