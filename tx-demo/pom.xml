@@ -9,12 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cache-demos</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>hazelcast-demo</module>
-        <module>memcached-demo</module>
-    </modules>
+    <artifactId>tx-demo</artifactId>
 
 
 </project>
