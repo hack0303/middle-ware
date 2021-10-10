@@ -11,6 +11,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         MemcachedClient client=new MemcachedClient(new InetSocketAddress("node01",11211));
-        System.out.println(client.add(key,10,"hello-v").getStatus().isSuccess());
+        System.out.println(client.set(key,10,"hello-v").getStatus().isSuccess());
+        client.flush().getStatus().isSuccess();
     }
 }
