@@ -13,6 +13,10 @@
     <packaging>pom</packaging>
     <modules>
         <module>nacos-demo</module>
+        <module>sentinel-demo</module>
+        <module>skywalking-demo</module>
+        <module>k8s-demo</module>
+        <module>kibana-demo</module>
     </modules>
 
 

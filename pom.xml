@@ -9,9 +9,6 @@
 
     <modules>
         <module>xxl-job-demo</module>
-        <module>zookeeper-demo</module>
-        <module>flink-demo</module>
-        <module>cassandra-demo</module>
         <module>domain-common</module>
         <module>rdb-demos</module>
         <module>nosql-demos</module>
@@ -20,6 +17,15 @@
         <module>bigdata-demos</module>
         <module>basic-demos</module>
         <module>level0-demo</module>
+        <module>graph-db-demos</module>
+        <module>rpc-demos</module>
+        <module>kv-demos</module>
+        <module>communication-demo</module>
+        <module>ts-db-demos</module>
+        <module>db-support-demos</module>
+        <module>consistent-demo</module>
+        <module>tx-demos</module>
+        <module>cloud-component-demos</module>
     </modules>
 
     <developers>
@@ -40,6 +46,9 @@
         <spring-boot.version>2.1.11.RELEASE</spring-boot.version>
         <spring-cloud.version>Greenwich.SR4</spring-cloud.version>
         <hazelcast.version>4.1.2</hazelcast.version>
+        <shardingsphere.version>5.0.0-alpha</shardingsphere.version>
+        <hutool.version>5.6.5</hutool.version>
+        <guava.version>31.0.1-jre</guava.version>
     </properties>
 
     <parent>
@@ -50,6 +59,19 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.shardingsphere</groupId>
+                <artifactId>shardingsphere</artifactId>
+                <version>${shardingsphere.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
@@ -76,6 +98,30 @@
                 <groupId>com.hazelcast</groupId>
                 <artifactId>hazelcast</artifactId>
                 <version>${hazelcast.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.shardingsphere</groupId>
+                <artifactId>shardingsphere-jdbc-core</artifactId>
+                <version>${shardingsphere.version}</version>
+            </dependency>
+
+            <!-- import if using XA transaction -->
+            <dependency>
+                <groupId>org.apache.shardingsphere</groupId>
+                <artifactId>shardingsphere-transaction-xa-core</artifactId>
+                <version>${shardingsphere.version}</version>
+            </dependency>
+
+            <!-- import if using BASE transaction -->
+            <dependency>
+                <groupId>org.apache.shardingsphere</groupId>
+                <artifactId>shardingsphere-transaction-base-seata-at</artifactId>
+                <version>${shardingsphere.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

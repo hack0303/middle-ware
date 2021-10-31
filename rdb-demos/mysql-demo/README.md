@@ -16,10 +16,12 @@ docker images
 4.运行容器
 docker run -itd --name mysql-test -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 mysql
 或 挂载
-docker run -itd --name mysql-test -v /home/mysql:/var/lib/mysql  -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 mysql
+docker run -itd --name mysql -v /home/mysql:/var/lib/mysql  -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 mysql
+或 
+docker run -d --name mysql --restart always -v ~/docker-data/mysql/conf:/etc/mysql/conf.d -v ~/docker-data/mysql/data:/var/lib/mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 mysql
 
 start with docker start
-docker update rabbitmq --restart=always
+docker update mysql --restart=always
 
 5.安装成功
 docker ps 命令查看是否安装成功
@@ -33,3 +35,4 @@ CREATE USER 'username'@'host' IDENTIFIED BY 'password';
 GRANT ALL ON *.* TO 'username'@'%';
 ```
 [参考](https://www.jianshu.com/p/d7b9c468f20d)
+[generator](https://github.com/hack0303/mybatis-plus-maven-plugin)

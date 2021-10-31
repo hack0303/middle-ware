@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>hazelcast-demo</module>
+        <module>memcached-demo</module>
     </modules>
 
 

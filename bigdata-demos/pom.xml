@@ -16,5 +16,8 @@
          <module>hive-demo</module>
          <module>spark-demo</module>
          <module>es-demo</module>
+         <module>hadoop-demo</module>
+         <module>flink-demo</module>
+         <module>tidb-demo</module>
      </modules>
 </project>

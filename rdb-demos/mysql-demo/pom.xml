@@ -12,4 +12,203 @@
     <artifactId>mysql-demo</artifactId>
 
 
+        <dependencies>
+            <!--
+           <dependency>
+               <groupId>com.baomidou</groupId>
+               <artifactId>mybatis-plus-boot-starter</artifactId>
+               <version>3.4.3</version>
+           </dependency>
+           <dependency>
+               <groupId>com.baomidou</groupId>
+               <artifactId>mybatis-plus</artifactId>
+               <version>3.4.3</version>
+           </dependency>
+           -->
+            <dependency>
+                <groupId>org.apache.maven</groupId>
+                <artifactId>maven-plugin-api</artifactId>
+                <version>2.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.maven.plugin-tools</groupId>
+                <artifactId>maven-plugin-annotations</artifactId>
+                <version>3.2</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.codehaus.plexus</groupId>
+                <artifactId>plexus-utils</artifactId>
+                <version>3.0.8</version>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.8.2</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.velocity</groupId>
+                <artifactId>velocity</artifactId>
+                <version>1.7</version>
+            </dependency>
+            <!--
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>5.1.38</version>
+            </dependency>
+            -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>8.0.23</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/org.apache.shardingsphere/shardingsphere-jdbc-core -->
+            <dependency>
+                <groupId>org.apache.shardingsphere</groupId>
+                <artifactId>shardingsphere-jdbc-core</artifactId>
+            </dependency>
+            <!-- import if using XA transaction -->
+            <dependency>
+                <groupId>org.apache.shardingsphere</groupId>
+                <artifactId>shardingsphere-transaction-xa-core</artifactId>
+            </dependency>
+            <!-- import if using BASE transaction -->
+            <!--
+            <dependency>
+                <groupId>org.apache.shardingsphere</groupId>
+                <artifactId>shardingsphere-transaction-base-seata-at</artifactId>
+            </dependency>
+            -->
+            <dependency>
+                <groupId>com.zaxxer</groupId>
+                <artifactId>HikariCP</artifactId>
+                <version>3.3.1</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.76</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+            </dependency>
+            <!--
+            <dependency>
+                <groupId>io.seata</groupId>
+                <artifactId>seata-rm-datasource</artifactId>
+                <scope>runtime</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.seata</groupId>
+                <artifactId>seata-tm</artifactId>
+                <scope>runtime</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.seata</groupId>
+                <artifactId>seata-codec-all</artifactId>
+                <scope>runtime</scope>
+            </dependency>
+            -->
+        </dependencies>
+
+    <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-plugin-plugin</artifactId>
+            <version>3.2</version>
+            <configuration>
+                <goalPrefix>mybatisplus</goalPrefix>
+                <skipErrorNoDescriptorsFound>true</skipErrorNoDescriptorsFound>
+            </configuration>
+            <executions>
+                <execution>
+                    <id>mojo-descriptor</id>
+                    <goals>
+                        <goal>descriptor</goal>
+                    </goals>
+                </execution>
+                <execution>
+                    <id>help-goal</id>
+                    <goals>
+                        <goal>helpmojo</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+
+
+        <plugin>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatisplus-maven-plugin</artifactId>
+            <version>1.0.0</version>
+            <configuration>
+                <!-- 输出目录(默认java.io.tmpdir) -->
+                <outputDir>mybatis-plus</outputDir>
+                <!-- 是否覆盖同名文件(默认false) -->
+                <fileOverride>true</fileOverride>
+                <!-- mapper.xml 中添加二级缓存配置(默认true) -->
+                <enableCache>true</enableCache>
+                <!-- 开发者名称 -->
+                <author>hack0303</author>
+                <!-- 数据源配置，(必配) -->
+                <dataSource>
+                    <driverName>com.mysql.cj.jdbc.Driver</driverName>
+                    <url>jdbc:mysql://node01:3306/test?useUnicode=true&amp;useSSL=false</url>
+                    <username>root</username>
+                    <password>123456</password>
+                </dataSource>
+                <strategy>
+                    <!-- 字段生成策略，四种类型，从名称就能看出来含义
+                    nochange(默认),
+                    underline_to_camel,
+                    remove_prefix,
+                    remove_prefix_and_camel -->
+                    <naming>remove_prefix_and_camel</naming>
+                    <!-- ID策略 是LONG还是STRING类型(默认stringtype)-->
+                    <serviceIdType>longtype</serviceIdType>
+                    <!--Entity中的ID生成策略（默认 id_worker）-->
+                    <idGenType>uuid</idGenType>
+                    <!--自定义超类-->
+                    <!--<superServiceClass>net.hyman.base.BaseService</superServiceClass>-->
+                    <!-- 要包含的表 与exclude 二选一配置-->
+                    <include>
+                        <property>t_order</property>
+                    </include>
+                    <!-- 要排除的表 -->
+                    <!--<exclude>-->
+                    <!--<property>schema_version</property>-->
+                    <!--<property>schema_version</property>-->
+                    <!--</exclude>-->
+                </strategy>
+                <packageInfo>
+                    <!-- 父级包名称，如果不写，下面的service等就需要写全包名(默认com.baomidou) -->
+                    <parent>org.cland.rdb.demo.mysql</parent>
+                    <!--service包名(默认service)-->
+                    <service>service</service>
+                    <!--serviceImpl包名(默认service.impl)-->
+                    <serviceImpl>service.impl</serviceImpl>
+                    <!--entity包名(默认entity)-->
+                    <entity>entity</entity>
+                    <!--mapper包名(默认mapper)-->
+                    <mapper>mapper</mapper>
+                    <!--xml包名(默认mapper.xml)-->
+                    <xml>mapper.xml</xml>
+                </packageInfo>
+            </configuration>
+            <dependencies>
+                <dependency>
+                    <groupId>mysql</groupId>
+                    <artifactId>mysql-connector-java</artifactId>
+                    <version>8.0.23</version>
+                </dependency>
+            </dependencies>
+        </plugin>
+
+    </plugins>
+    </build>
 </project>
