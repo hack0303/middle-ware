@@ -3,21 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>middle-ware</artifactId>
+        <artifactId>rdb-demos</artifactId>
         <groupId>org.cland</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>bigdata-demos</artifactId>
-    <packaging>pom</packaging>
-     <modules>
-         <module>hbase-demo</module>
-         <module>hive-demo</module>
-         <module>spark-demo</module>
-         <module>es-demo</module>
-         <module>hadoop-demo</module>
-         <module>flink-demo</module>
-         <module>tidb-demo</module>
-     </modules>
+    <artifactId>mariadb-demo</artifactId>
+
+
 </project>
