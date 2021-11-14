@@ -83,6 +83,10 @@ $ chmod +x /usr/local/bin/docker-compose
 $ docker-compose --version
 ```
 
+
+## R&Q
+**devicemapper: Error running deviceCreate (ActivateDevice) dm_task_run failed**
+[RESOLVE](https://blog.csdn.net/weixin_30463341/article/details/99035583)
 ## 参考
 
 [centos下安装启动docker](https://docs.docker.com/engine/install/centos/)
