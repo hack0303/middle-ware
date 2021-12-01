@@ -116,7 +116,14 @@ docker run \
                        -v /opt/nginx/logs:/var/log/nginx \
                        -d 53f3fd8007f7
 ```
- 
+ ```
+docker run \
+                       --name nginx \
+                       --net host \-v  /opt/nginx/config/nginx.conf:/etc/nginx/nginx.conf \
+                       -v /opt/nginx/config/conf.d:/etc/nginx/conf.d  \
+                       -v /opt/nginx/logs:/var/log/nginx \
+                       -d 53f3fd8007f7
+```
 
 7、在浏览器找那个打开 http://192.168.172.20:8100，进入到nginx欢迎页面；
 # 相关
