@@ -1,0 +1,1 @@
+[tinc组网](http://www.lucktu.com/archives/763.html)

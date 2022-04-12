@@ -68,5 +68,13 @@ Note: grafana创建一个新数据源时，数据源地址必须是 http://prome
 Nacos
 Nacos Docker
 
+
+# F&Q
+1. 镜像包版本问题
+
+   2.0.3 后使用 v2.0.3,之前都是2.0.2这种命名
+
 # 文档
 [Nacos Docker 快速开始](https://nacos.io/zh-cn/docs/quick-start-docker.html)
+[解决Docker配置Nacos的MySql持久化报错 nacos | Caused by: java.lang.IllegalStateException: No DataSource set](https://blog.csdn.net/qq_41027559/article/details/121076246)
+[初始化数据库脚本](https://github.com/alibaba/nacos/blob/master/distribution/conf/nacos-mysql.sql)

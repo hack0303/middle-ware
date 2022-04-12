@@ -1,0 +1,15 @@
+version: '3'
+services:
+  redis:
+    image: redis:5.0.11
+    container_name: redis
+    sysctls:
+      - net.core.somaxconn=65535
+    volumes:
+      - ./data:/data
+      - ./redis.conf:/etc/redis/redis.conf
+      - ./logs:/logs
+    command: ["redis-server","/etc/redis/redis.conf", "--appendonly", "yes"]
+    ports:
+      - 6379:6379
+    restart: always

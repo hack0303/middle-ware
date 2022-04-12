@@ -16,3 +16,4 @@
 访问用 root/123456
 ```
 # 相关
+[Springboot+rabbitmq的简单使用](https://blog.csdn.net/zhangyuxuan2/article/details/82986702)

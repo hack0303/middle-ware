@@ -9,13 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>rdb-demos</artifactId>
+    <artifactId>artifact</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>mysql-demo</module>
-        <module>h2-demo</module>
-        <module>mariadb-demo</module>
-        <module>sqlite-demo</module>
+        <module>okhttp3</module>
     </modules>
 
 

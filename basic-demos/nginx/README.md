@@ -122,9 +122,20 @@ docker run \
                        --net host \-v  /opt/nginx/config/nginx.conf:/etc/nginx/nginx.conf \
                        -v /opt/nginx/config/conf.d:/etc/nginx/conf.d  \
                        -v /opt/nginx/logs:/var/log/nginx \
+                       -v /home/dev-env/html:/opt/html \
                        -d 53f3fd8007f7
 ```
 
 7、在浏览器找那个打开 http://192.168.172.20:8100，进入到nginx欢迎页面；
 # 相关
 [nginx](http://nginx.org/en/download.html)
+[docker-maven](https://springframework.guru/fabric8-docker-maven-plugin/)
+[nginx反向代理后，获取hostname不正确的问题](https://www.iteye.com/blog/alex-yang-xiansoftware-com-2404387)
+
+# F&Q
+host不是请求的
+```
+          proxy_set_header HOST $host;   
+            proxy_set_header X-Real-IP $remote_addr;   
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;  
+```
