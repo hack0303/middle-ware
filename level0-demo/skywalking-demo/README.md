@@ -30,3 +30,5 @@ apache/skywalking-ui:6.6.0
 
 # REF
 [部署参考](https://blog.csdn.net/OptimusPP/article/details/106425807)
+[APM ——全链路追踪_Think In JAVA—Max-程序员宅基地_apm链路追踪](https://www.cxyzjd.com/article/Daybreak1209/98070997)
+[分布式链路追踪选型-skywalking](https://blog.51cto.com/u_15162069/2901380)
