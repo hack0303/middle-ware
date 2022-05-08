@@ -8,11 +8,11 @@ Older versions of Docker were called `docker` or `docker-engine`. If these are i
 $ sudo yum remove docker \
                   docker-client \
                   docker-client-latest \
-                  docker-common \
+                  docker-common \    docker-latest-logrotate \
+                                                   docker-logrotate \
+                                                   docker-engine
                   docker-latest \
-                  docker-latest-logrotate \
-                  docker-logrotate \
-                  docker-engine
+              
 ```
 
 It’s OK if `yum` reports that none of these packages are installed.

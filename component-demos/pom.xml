@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-component-demos</artifactId>
+    <artifactId>component-demos</artifactId>
     <packaging>pom</packaging>
     <modules>
         <module>openfeign-demo</module>

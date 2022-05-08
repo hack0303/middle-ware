@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>okhttp3</module>
+        <module>fastjson2</module>
     </modules>
 
 
