@@ -11,9 +11,6 @@
 
     <artifactId>basic-demos</artifactId>
     <packaging>pom</packaging>
-    <modules>
-        <module>java-demo</module>
-    </modules>
 
 
 </project>

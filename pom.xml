@@ -27,6 +27,7 @@
         <module>tx-demos</module>
         <module>component-demos</module>
         <module>artifact</module>
+        <module>test</module>
     </modules>
 
     <developers>

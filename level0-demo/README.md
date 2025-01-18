@@ -1,0 +1,1 @@
+[熔断方案](https://www.coonote.com/distributed-system/fusing-scheme.html)
