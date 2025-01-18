@@ -16,3 +16,7 @@
 访问用 root/123456
 ```
 # 相关
+[Springboot+rabbitmq的简单使用](https://blog.csdn.net/zhangyuxuan2/article/details/82986702)
+# API
+[amqp-template](https://docs.spring.io/spring-amqp/docs/current/reference/html/#amqp-template)
+[消息队列客户端开发向导二（基于 Spring 的 amqp 实现）](https://www.136.la/java/show-71290.html)

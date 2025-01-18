@@ -25,7 +25,9 @@
         <module>db-support-demos</module>
         <module>consistent-demo</module>
         <module>tx-demos</module>
-        <module>cloud-component-demos</module>
+        <module>component-demos</module>
+        <module>artifact</module>
+        <module>test</module>
     </modules>
 
     <developers>

@@ -13,7 +13,7 @@ public class SayHelloController {
     @Value("${k1.v1}")
     String v1;
 
-    @Value("#{num}")
+    //@Value("#{num}")
     Long num;
 
     @Value("${name:adsa}")

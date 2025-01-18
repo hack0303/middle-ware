@@ -15,6 +15,7 @@
         <module>mysql-demo</module>
         <module>h2-demo</module>
         <module>mariadb-demo</module>
+        <module>sqlite-demo</module>
     </modules>
 
 
