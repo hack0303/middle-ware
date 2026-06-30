@@ -12,8 +12,6 @@
     <artifactId>test</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>mockito-test</module>
-        <module>testable-test</module>
     </modules>
 
 

@@ -12,7 +12,7 @@
     <artifactId>hbase-demo</artifactId>
 
     <properties>
-        <hbase.version>2.3.5</hbase.version>
+        <hbase.version>2.5.8</hbase.version>
     </properties>
 
     <dependencyManagement>
