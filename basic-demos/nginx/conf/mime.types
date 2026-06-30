@@ -1,0 +1,4 @@
+types {
+    text/css css;
+    # 其他 MIME 类型
+}

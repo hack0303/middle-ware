@@ -28,6 +28,7 @@
         <module>component-demos</module>
         <module>artifact</module>
         <module>test</module>
+        <module>tools</module>
     </modules>
 
     <developers>
